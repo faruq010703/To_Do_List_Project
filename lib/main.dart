@@ -60,7 +60,7 @@ class _ToDoListScreenState extends State<ToDoListScreen> {
       body: Column(
         children: [
           Padding(
-            padding: EdgeInsets.all(16),
+            padding: EdgeInsets.all(15),
             child: Row(
               children: [
                 Expanded(
@@ -72,7 +72,7 @@ class _ToDoListScreenState extends State<ToDoListScreen> {
                     ),
                   ),
                 ),
-                SizedBox(width: 10),
+                SizedBox(width: 11),
                 ElevatedButton(
                   onPressed: _addTask,
                   child: Icon(Icons.add),
@@ -87,7 +87,7 @@ class _ToDoListScreenState extends State<ToDoListScreen> {
           ),
           Expanded(
             child: _tasks.isEmpty
-                ? Center(child: Text("Belum ada tugas 😴"))
+                ? Center(child: Text("Belum ada  Tugas nih 😴"))
                 : ListView.builder(
                     itemCount: _tasks.length,
                     itemBuilder: (_, index) {
